@@ -1,122 +1,137 @@
 {
 "-Ns-FrZ-2Zhwu7mO7Vdz": {
   "firebaseKey":"-Ns-FrZ-2Zhwu7mO7Vdz",
+  "language_id":null,
   "title":"console.log()",
   "definition":"method used to log or print messages to the console",
   "timeSubmitted":"2023-03-23 04:16:27",
   "uid":null,
-  "language_id":"JAVASCRIPT"
+  "category":"JAVASCRIPT"
 },
 "-Ns-FrZ0cgPwYBzrFWdu": {
   "firebaseKey":"-Ns-FrZ0cgPwYBzrFWdu",
-  "title":"<!DOCTYPE>",
+  "language_id":null,
+  "title":"&lt!DOCTYPE&gt",
   "definition":"This is an instruction to the web browser about what version of HTML the page is written in. It must be the very first line of code in your document.",
   "timeSubmitted":"2023-02-28 13:54:30",
   "uid":null,
-  "language_id":"HTML"
+  "category":"HTML"
 },
 "-Ns-FrZ29JOZgFGz5ik-": {
   "firebaseKey":"-Ns-FrZ29JOZgFGz5ik-",
+  "language_id":null,
   "title":"CSS",
   "definition":"Stands for Cascading Style Sheets.",
   "timeSubmitted":"2023-06-13 14:47:25",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 },
 "-Ns-FrZ3nq6qvo1ZPa4F": {
   "firebaseKey":"-Ns-FrZ3nq6qvo1ZPa4F",
+  "language_id":null,
   "title":"JavaScript",
   "definition":"a programming language that powers the dynamce behavior on most websites. Alongside HTML and CSS, it is a core technology that makes the web run.",
   "timeSubmitted":"2023-04-14 17:03:41",
   "uid":null,
-  "language_id":"JAVASCRIPT"
+  "category":"JAVASCRIPT"
 },
 "-Ns-FrZ3nq6qvo1ZPa4G": {
   "firebaseKey":"-Ns-FrZ3nq6qvo1ZPa4G",
+  "language_id":null,
   "title":"method",
   "definition":"returns information about an object and are called by appending an instance with a period '.' the method name, and parentheses.",
   "timeSubmitted":"2023-08-06 22:49:34",
   "uid":null,
-  "language_id":"JAVASCRIPT"
+  "category":"JAVASCRIPT"
 },
 "-Ns-FrZ4V2zUMdAEfM28": {
   "firebaseKey":"-Ns-FrZ4V2zUMdAEfM28",
+  "language_id":null,
   "title":"Style Rule",
   "definition":"a line or block of CSS code that specifies the presentation of Webpage elements",
   "timeSubmitted":"2024-02-19 01:14:13",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 },
 "-Ns-FrZ6FCZKDxwHViu_": {
   "firebaseKey":"-Ns-FrZ6FCZKDxwHViu_",
+  "language_id":null,
   "title":"Libraries",
   "definition":"contain methods that can be called by appending the library name with a period., the method name, and a set of parentheses (i.e. Math.random();)",
   "timeSubmitted":"2023-06-05 13:59:06",
   "uid":null,
-  "language_id":"JAVASCRIPT"
+  "category":"JAVASCRIPT"
 },
 "-Ns-FrZ73tRLXlCeh3fA": {
   "firebaseKey":"-Ns-FrZ73tRLXlCeh3fA",
+  "language_id":null,
   "title":"name-value pair",
   "definition":"a section of CSS code that specifies a CSS property to apply to the selector(s) and the value to assign to the property",
   "timeSubmitted":"2023-12-16 13:32:56",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 },
 "-Ns-FrZ87aYlUMTtd2n0": {
   "firebaseKey":"-Ns-FrZ87aYlUMTtd2n0",
+  "language_id":null,
   "title":"Embedded Style Sheet",
   "definition":"a section of CSS code entered in head element of HTML document",
   "timeSubmitted":"2023-06-12 17:20:56",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 },
 "-Ns-FrZ87aYlUMTtd2n1": {
   "firebaseKey":"-Ns-FrZ87aYlUMTtd2n1",
-  "title":"<html></html>",
+  "language_id":null,
+  "title":"&lthtml&gt&lt/html&gt",
   "definition":"Stands for Hypertext Markup Language and identifies the document as HTML.",
   "timeSubmitted":"2023-04-13 18:10:39",
   "uid":null,
-  "language_id":"HTML"
+  "category":"HTML"
 },
 "-Ns-FrZ9NwE7S6nqqMyq": {
   "firebaseKey":"-Ns-FrZ9NwE7S6nqqMyq",
-  "title":"<head></head>",
+  "language_id":null,
+  "title":"&lthead&gt&lt/head&gt",
   "definition":"Identifies the header section of your document and is used primarily by search engines and browsers.",
   "timeSubmitted":"2023-09-26 05:13:44",
   "uid":null,
-  "language_id":"HTML"
+  "category":"HTML"
 },
 "-Ns-FrZ9NwE7S6nqqMyr": {
   "firebaseKey":"-Ns-FrZ9NwE7S6nqqMyr",
+  "language_id":null,
   "title":"Single Line Comment",
   "definition":"comments are create with two consecutive forward slashes //",
   "timeSubmitted":"2023-04-11 21:17:11",
   "uid":null,
-  "language_id":"JAVASCRIPT"
+  "category":"JAVASCRIPT"
 },
 "-Ns-FrZA5ZKpqK3OETwr": {
   "firebaseKey":"-Ns-FrZA5ZKpqK3OETwr",
+  "language_id":null,
   "title":"External Style Sheet",
   "definition":"a separate file containing style info that multiple Webpages can link to",
   "timeSubmitted":"2023-05-09 04:21:08",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 },
 "-Ns-FrZA5ZKpqK3OETws": {
   "firebaseKey":"-Ns-FrZA5ZKpqK3OETws",
-  "title":"<title></title>",
+  "language_id":null,
+  "title":"&lttitle&gt&lt/title&gt",
   "definition":"It creates a title in the browser toolbar and provides a title for the page when it is added to a persons favorites.",
   "timeSubmitted":"2023-09-06 14:46:04",
   "uid":null,
-  "language_id":"HTML"
+  "category":"HTML"
 },
 "-Ns-FrZB5OaY-P_NRjPB": {
   "firebaseKey":"-Ns-FrZB5OaY-P_NRjPB",
+  "language_id":null,
   "title":"Type Selector",
   "definition":"the most general type of selector, which is the name of an HTML element",
   "timeSubmitted":"2023-06-21 16:39:44",
   "uid":null,
-  "language_id":"CSS"
+  "category":"CSS"
 }
 }
