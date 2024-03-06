@@ -1,4 +1,4 @@
-import renderToDom from '../utils/renderToDom';
+import renderToDom from '../../utils/renderToDom';
 
 const navBar = () => {
   const domString = `
@@ -11,7 +11,7 @@ const navBar = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Add New Card</a>
+          <a class="nav-link active" aria-current="page" href="#" id="add-card">Add New Card</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="view-all">View All Cards</a>
