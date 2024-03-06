@@ -8,8 +8,9 @@ const formEvents = (uid) => {
     if (e.target.id.includes('submit-vocab')) {
       const payload = {
         title: document.querySelector('#title').value,
-        category: document.querySelector('#category').value,
+        category: document.querySelector('#language_id').value,
         definition: document.querySelector('#definition').value,
+        timeSubmitted: Date.now(),
         uid
       };
       console.warn(payload);
