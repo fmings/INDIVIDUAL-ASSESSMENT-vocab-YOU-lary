@@ -92,6 +92,38 @@ const getHtmlCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// FILTER TO CSS CARDS
+const getCssCards = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const cssCards = Object.values(data).filter((obj) => obj.languageId === '-NsB-2wpeBXLy4lMTRi4');
+      resolve(cssCards);
+    })
+    .catch(reject);
+});
+
+// FILTER TO JAVASCRIPT CARDS
+const getjavascriptCards = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const javascriptCards = Object.values(data).filter((obj) => obj.languageId === '-NsB-2wpeBXLy4lMTRi5');
+      resolve(javascriptCards);
+    })
+    .catch(reject);
+});
+
 export {
-  getVocabCards, createVocabCard, updateVocabCard, deleteVocabCard, getSingleVocabCard, getHtmlCards
+  getVocabCards, createVocabCard, updateVocabCard, deleteVocabCard, getSingleVocabCard, getHtmlCards, getCssCards, getjavascriptCards
 };
