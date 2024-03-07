@@ -1,6 +1,4 @@
 import getLanguage from '../api/languageData';
-import filterButtons from '../components/buttons/filterButtons';
-import filterEvents from '../events/filterEvents';
 import clearDom from '../utils/clearDom';
 import renderToDom from '../utils/renderToDom';
 
@@ -8,7 +6,6 @@ const showVocabCards = async (array, uid) => {
   clearDom();
 
   let domString = '';
-  domString += '<div id="filter-container"></div>';
   const languages = await getLanguage(uid);
 
   array.forEach((item) => {
@@ -26,8 +23,6 @@ const showVocabCards = async (array, uid) => {
       </div>`;
 
     renderToDom('#card-container', domString);
-    filterButtons();
-    filterEvents();
   });
 };
 
