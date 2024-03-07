@@ -8,9 +8,9 @@ const formEvents = (uid) => {
     if (e.target.id.includes('submit-vocab')) {
       const payload = {
         title: document.querySelector('#title').value,
-        category: document.querySelector('#language_id').value,
         definition: document.querySelector('#definition').value,
         timeSubmitted: Date.now(),
+        languageId: document.querySelector('#language_id').value,
         uid
       };
       console.warn(payload);
@@ -18,8 +18,26 @@ const formEvents = (uid) => {
         const patchPayload = { firebaseKey: name };
 
         updateVocabCard(patchPayload).then(() => {
-          getVocabCards(uid).then(showVocabCards);
+          getVocabCards(uid).then((vocab) => showVocabCards(vocab, uid));
         });
+      });
+    }
+
+    // CLICK EVENT FOR EDITING A BOOK
+    if (e.target.id.includes('update-vocab')) {
+      const [, firebaseKey] = e.target.id.split('--');
+
+      const payload = {
+        title: document.querySelector('#title').value,
+        definition: document.querySelector('#definition').value,
+        timeSubmitted: Date.now(),
+        languageId: document.querySelector('#language_id').value,
+        firebaseKey,
+        uid
+      };
+
+      updateVocabCard(payload).then(() => {
+        getVocabCards(uid).then((vocab) => showVocabCards(vocab, uid));
       });
     }
   });

@@ -22,6 +22,19 @@ const getVocabCards = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// GET SINGLE VOCAB CARD
+const getSingleVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 // CREATE NEW VOCAB CARD
 const createVocabCard = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab.json`, {
@@ -36,6 +49,7 @@ const createVocabCard = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// UPDATE A VOCAB CARD
 const updateVocabCard = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab/${payload.firebaseKey}.json`, {
     method: 'PATCH',
@@ -49,4 +63,19 @@ const updateVocabCard = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export { getVocabCards, createVocabCard, updateVocabCard };
+// DELETE A VOCAB CARD
+const deleteVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+export {
+  getVocabCards, createVocabCard, updateVocabCard, deleteVocabCard, getSingleVocabCard
+};
