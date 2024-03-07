@@ -4,7 +4,7 @@ import showVocabCards from '../pages/vocab';
 
 const navigationEvents = (uid) => {
   document.querySelector('#view-all').addEventListener('click', () => {
-    getVocabCards(uid).then(showVocabCards);
+    getVocabCards(uid).then((vocab) => showVocabCards(vocab, uid));
   });
 
   document.querySelector('#add-card').addEventListener('click', () => {

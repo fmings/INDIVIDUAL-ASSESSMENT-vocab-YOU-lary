@@ -17,13 +17,13 @@ const addVocabCardForm = (uid, obj = {}) => {
       <input type="text" class="form-control" id="definition" placeholder="Enter Definition Here" value="${obj.definition || ''}">
     </div>
     <div class="col-auto">
-      <button type="submit" class="btn btn-primary">${obj.firebaseKey ? 'Edit' : 'Submit'}</button>
+      <button type="submit" class="btn btn-primary">${obj.firebaseKey ? 'Submit Edit' : 'Submit'}</button>
     </div>
   </form>
   `;
 
   renderToDom('#form-container', domString);
-  selectLanguage(uid, `${obj.language_id || ''}`);
+  selectLanguage(uid, `${obj.languageId || ''}`);
 };
 
 export default addVocabCardForm;
