@@ -13,7 +13,7 @@ const formEvents = (uid) => {
         languageId: document.querySelector('#language_id').value,
         uid
       };
-      console.warn(payload);
+
       createVocabCard(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
 

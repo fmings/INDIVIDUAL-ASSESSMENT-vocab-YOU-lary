@@ -76,6 +76,22 @@ const deleteVocabCard = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// FILTER TO HTML CARDS
+const getHtmlCards = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const htmlCards = Object.values(data).filter((obj) => obj.languageId === '-NsB-2wo8eTKqoFWgHcO');
+      resolve(htmlCards);
+    })
+    .catch(reject);
+});
+
 export {
-  getVocabCards, createVocabCard, updateVocabCard, deleteVocabCard, getSingleVocabCard
+  getVocabCards, createVocabCard, updateVocabCard, deleteVocabCard, getSingleVocabCard, getHtmlCards
 };
