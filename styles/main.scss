@@ -129,6 +129,14 @@ body {
   width: 100%;
 }
 
+.card-subtitle {
+  width: 100%;
+}
+
+.card-text {
+  width: 100%;
+}
+
 .card-text {
   padding-left: 10px;
   padding-right: 10px;
@@ -202,4 +210,12 @@ body {
   background-color: rgb(71, 33, 86) !important;
   color: #FAF9F6;
   border: 1px solid rgb(71, 33, 86) !important;
+}
+
+#search {
+  width: 30%;
+}
+
+.navbar-toggler {
+  background-color: #FAF9F6;
 }
