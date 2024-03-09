@@ -4,6 +4,7 @@ import selectLanguage from './selectLanguage';
 
 const addVocabCardForm = (uid, obj = {}) => {
   clearDom();
+
   const domString = `
   <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}">
     <div class="mb-3">
@@ -17,7 +18,7 @@ const addVocabCardForm = (uid, obj = {}) => {
       <input type="text" class="form-control" id="definition" placeholder="Enter Definition Here" value="${obj.definition || ''}">
     </div>
     <div class="col-auto">
-      <button type="submit" class="btn btn-primary">${obj.firebaseKey ? 'Submit Edit' : 'Submit'}</button>
+      <button type="submit" class="btn btn-primary submit-btn">${obj.firebaseKey ? 'Update My Card' : 'Add My Card'}</button>
     </div>
   </form>
   `;
